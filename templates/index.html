@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NBA Point Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+</head>
+
+<body>
+    <h1>NBA Points Predictor</h1>
+    <form action="/" method="post">
+        <div class="input-container">
+            <label for="playerName">Enter an NBA player's name:</label>
+            <input type="text" id="playerName" name="player_name">
+        </div>
+        <button type="submit">Predict Points for Next Game</button>
+    </form>
+    {% if prediction %}
+        <h2>Predicted Points for {{ player_name }}:</h2>
+        <p>Minutes Played: {{ player_data['minutes_played'] }}</p>
+        <p>Points Per Game: {{ player_data['points_per_game'] }}</p>
+        <p>Shooting Percentage: {{ player_data['shooting_percentage'] }}</p>
+        <p>Predicted Points Next Game: {{ prediction }}</p>
+    {% endif %}
+</body>
+</html>

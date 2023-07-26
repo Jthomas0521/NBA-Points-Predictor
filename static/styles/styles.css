@@ -1,0 +1,70 @@
+body {
+    font-family: Cambria, serif;
+    background-color: rgba(20, 20, 20, 0.8);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 36px;
+}
+
+form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8); /* Slightly transparent underline */
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    color: #fff;
+    transition: border-bottom-color 0.3s; /* Smooth transition on focus */
+    width: 300px; /* Adjust the width as needed */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-bottom: 2px solid #E50914;
+}
+
+button {
+    background-color: rgba(229, 9, 20, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: rgba(178, 7, 13, 0.8);
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+}
