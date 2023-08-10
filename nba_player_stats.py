@@ -4,7 +4,7 @@ from nba_api.stats.endpoints import playergamelog
 from sklearn.tree import DecisionTreeRegressor
 from flask import Flask, request, render_template
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 def get_player_id(player_name):
     player_list = players.get_players()
